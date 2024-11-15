@@ -1,20 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-
-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>{% block title %}{% endblock %} | Mi Web Personal</title>
-</head>
-<body>
-<h1>Mi Web Personal</h1>
-<ul>
-    <li><a href="{% url 'home' %}">Portada</a></li>
-    <li><a href="{% url 'about' %}">Acerca de</a></li>
-    <li><a href="{% url 'portfolio' %}">Portafolio</a></li>
-    <li><a href="{% url 'contact' %}">Contacto</a></li>
-</ul>
-{% block content %}{% endblock %}
-</body>
-</html>
+<a class="navbar-brand" href="{% url 'home' %}">Lucía Mielgo</a>
+{% load static %}
+
+
+
+<title>{% block title %}{% endblock %} | Lucía Mielgo(Estudiante de Ingenieria Matemática)</title>
+<div class="collapse navbar-collapse" id="navbarResponsive">
+    <ul class="navbar-nav ml-auto">
+    <li class="nav-item">
+    <a class="nav-link" href="{% url 'home' %}">Portada</a>
+    </li>
+    <li class="nav-item">
+    <a class="nav-link" href="{% url 'about' %}">Acerca
+    de</a>
+    </li>
+    <li class="nav-item">
+    <a class="nav-link" href="{% url 'portfolio'
+    %}">Portafolio</a>
+    </li>
+    <li class="nav-item">
+    <a class="nav-link" href="{% url 'contact'
+    %}">Contacto</a>
+    </li>
+    </ul>
+    </div>
+    {% block content %}{% endblock %}
+    <script src="{% static 'core/vendor/jquery/jquery.min.js'
+    %}"></script>
+    <script src="{% static
+    'core/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'core/js/clean-blog.min.js' %}"></script>
