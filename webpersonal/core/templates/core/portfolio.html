@@ -1,6 +1,13 @@
 {% extends 'core/base.html' %}
-{% block title %}Portafolio{% endblock %}
+{% load static %}
+{% block title %}
+  Portafolio
+{% endblock %}
+{% block background %}{% static 'core/img/math.jpg' %}{% endblock %}
+{% block headers %}
+<h1>Portafolio</h1>
+{% endblock %}
 {% block content %}
-<h2>Portafolio</h2>
-<p>Algunos de mis trabajos.</p>
+  <h2>Portafolio</h2>
+  <p>Algunos de mis trabajos.</p>
 {% endblock %}

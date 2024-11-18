@@ -1,3 +1,4 @@
+console.log("clean-blog.js loaded");
 (function($) {
   "use strict"; // Start of use strict
 
