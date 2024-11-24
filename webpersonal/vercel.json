@@ -1,10 +1,4 @@
 {
-    "builds": [
-      {
-        "src": "webpersonal/wsgi.py",
-        "use": "@vercel/python"
-      }
-    ],
     "routes": [
       {
         "src": "/(.*)",
